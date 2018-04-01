@@ -49,3 +49,8 @@ RUN /usr/local/bin/apt-install mysql-client-5.7 \
 # Add user and fix permissions
 RUN adduser www-data application
 RUN chmod 0644 /etc/cron.d/typo3
+
+# Install Codeception
+RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept \
+    && chmod a+x /usr/local/bin/codecept
+
