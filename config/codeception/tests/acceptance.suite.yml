@@ -8,5 +8,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://%WEB_ALIAS_DOMAIN%
+            url: %PAGE__BASE_URL%
         - \Helper\Acceptance
